@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1030">
+  <title>Flor 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+
+  <main class="scene" id="scene">
+    <div class="flower" id="flower">
+      <div class="stem">
+        <div class="stem-plane"></div>
+        <div class="stem-plane" style="--r: 90deg"></div>
+        <div class="leaf leaf-left"></div>
+        <div class="leaf leaf-right"></div>
+      </div>
+      <div class="head" id="head"></div>
+    </div>
+  </main>
+
+  <div class="hud">
+    <div class="readout" id="readout">
+      <span>X <b id="rx">0°</b></span>
+      <span>Y <b id="ry">0°</b></span>
+      <span>Z <b id="rz">0°</b></span>
+    </div>
+    <p class="hint" id="hint">Toca el botón y mueve tu teléfono</p>
+    <div class="buttons">
+      <button id="startBtn" type="button">Activar sensores</button>
+      <button id="calibrateBtn" type="button" hidden>Recalibrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
